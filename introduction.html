@@ -10,8 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -32,8 +32,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="introduction.html">1. Introduction</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="introduction.html">1. Introduction</a></li>
             <li><a href="terms.html">2. Important Terms</a></li>
             <li><a href="getting-started.html">3. Getting Started</a></li>
             <li><a href="tasks.html">4. Tasks</a></li>
@@ -41,12 +41,11 @@
         </div><!--/.navbar-collapse -->
       </div>
     </div>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
+    
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, crowd!</h1>
-        <h3>A User Friendly Guide to Doing Human Computation Well</h3>
+        <h1>1. Introduction</h1>
+        <h3>What is crowdsourcing? Why do you need it?</h3>
       </div>
     </div>
 
@@ -54,26 +53,21 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-12">
-<h4>Did you ever ask yourself...</h4>
-<ul>
-<li>How do I get started with crowdsourcing?</li>
-<li>Which crowd platform is best for my problem?</li>
-<li>How well do different platforms work on different problems?</li>
-</ul>
 
-<h4>Hello, Crowd! is a project to:</h4>
-<ol>
-<li>develop a baseline set of reusable benchmark tasks for human computation</li>
-<li>produce simple tutorials showing how to post common tasks to multiple platforms </li>
-<li>establish cross-crowd performance metrics in the face of different input parameters</li>
-<li>evaluate reproducibility of crowd results </li>
-</ol>
-
-<h4>Before we start, let's first create your first crowdsourcig task.</h4>
+            <div class="paragraph">
+Going to the crowd to complete tasks, find funding, or generate data is increasingly popular. While crowdfunding websites such as Kickstarter.com or Kiva.com are frequently in the news, crowdsourcing is another common means of going to the crowd. As it is is commonly understood, crowdsourcing is process of going to the crowd in order to perform work. Examples you may be familiar with include [TK]. While crowdsourcing emerged before the advent of computer science, such as genealogical research, it is now prevalent throughout the business and academic worlds. 
+            </div>
+            <div class="paragraph">
+  You may be saying to yourself that this is all well and good, but what is a crowd? Why do I want to go to the crowd? How do I set up a crowdsourcing project? If you’re a more advanced user with some experience crowdsourcing, you may be curious about the best platform for your problem and the different worker skills in each platform.
+            </div>
+            <div class="paragraph">
+  We decided to write this guide to help make crowdsourcing more user-friendly. There are so many people whose working life and research could be improved by going to the crowd, but who don’t feel comfortable programming or using crowd platforms. This contributes to the perception that crowdsourcing is “too technical” or “too advanced” for non-computer scientists. While this isn’t true, there is not currently a good, non-technical primer to setting up crowdsourcing tasks and determining the accuracy and reproducibility of crowdsourced data. By completing this guide’s step-by-step instructions, we hope that you will 1) feel more comfortable programming and 2) feel at ease posting your crowd tasks onto common platforms. This guideline assumes no technical knowledge beyond the ability to think creatively and read through code with comments included.
+            </div>
+            <div class="paragraph">
+  We proceed as follows. First, we define and discuss some jargon so that we can be sure our readers are familiar with the terms used by the crowd community. Second, we include instructions for setting up accounts and posting tasks to several common crowd platforms. Within this section, we discuss the pros and cons of each platform in order to help you make an educated decision about the best host for your project. Third, we present some basic tasks and their code. Finally, we [TK].      
+            </div>
         </div>
 
-		<div class="col-lg-offset-3 col-lg-6" id="editor">
-		</div>
 
 
       </div>
@@ -86,20 +80,8 @@
     </div> <!-- /container -->        
     	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-		<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/main.js"></script>
-        <script>
-        var initialText = 	"// Let's create your first crowdsourcing task.\n" +
-							"// Type in \"run\"";
-		$(document).ready(function(){
-			$("#editor").text(initialText);
-		    var editor = ace.edit("editor");
-		    editor.setTheme("ace/theme/monokai");
-		    editor.getSession().setMode("ace/mode/javascript");			
-		});
-        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

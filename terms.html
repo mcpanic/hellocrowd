@@ -11,9 +11,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="css/main.css">
-
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
@@ -32,9 +31,9 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="introduction.html">1. Introduction</a></li>
-            <li><a href="terms.html">2. Important Terms</a></li>
+            <li class="active"><a href="terms.html">2. Important Terms</a></li>
             <li><a href="getting-started.html">3. Getting Started</a></li>
             <li><a href="tasks.html">4. Tasks</a></li>
           </ul>
@@ -54,26 +53,35 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-lg-12">
-<h4>Did you ever ask yourself...</h4>
-<ul>
-<li>How do I get started with crowdsourcing?</li>
-<li>Which crowd platform is best for my problem?</li>
-<li>How well do different platforms work on different problems?</li>
-</ul>
+          <div>
+    Learning new vocabulary is everyone’s favorite thing, right? No, you’re right, it’s not our’s either. In any technical domain, it is essential to make sure that we have a common vocabulary. Not only will this be essential as you read through this tutorial, but it will help you when setting up your tasks online and reading other’s publications. Unless you are already familiar with crowdsourcing, we encourage you not to skip this section.
+        <ul>
+        <li>
+Crowd: 
 
-<h4>Hello, Crowd! is a project to:</h4>
-<ol>
-<li>develop a baseline set of reusable benchmark tasks for human computation</li>
-<li>produce simple tutorials showing how to post common tasks to multiple platforms </li>
-<li>establish cross-crowd performance metrics in the face of different input parameters</li>
-<li>evaluate reproducibility of crowd results </li>
-</ol>
-
-<h4>Before we start, let's first create your first crowdsourcig task.</h4>
+  The most important, but most ambiguous, term in crowdsourcing is the crowd. 
+        </li>
+        <li>
+Crowdsourcing:
+        </li>
+        <li>
+Crowdfeeding: 
+        </li>
+        <li>
+Crowdfunding:
+        </li>
+        <li>
+HIT:
+        </li>
+        <li>
+Worker:
+        </li>
+        <li>
+Platform:   
+        </li>    
+          </div>
         </div>
 
-		<div class="col-lg-offset-3 col-lg-6" id="editor">
-		</div>
 
 
       </div>
@@ -88,18 +96,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-		<script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
         <script src="js/main.js"></script>
-        <script>
-        var initialText = 	"// Let's create your first crowdsourcing task.\n" +
-							"// Type in \"run\"";
-		$(document).ready(function(){
-			$("#editor").text(initialText);
-		    var editor = ace.edit("editor");
-		    editor.setTheme("ace/theme/monokai");
-		    editor.getSession().setMode("ace/mode/javascript");			
-		});
-        </script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
