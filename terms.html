@@ -44,8 +44,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, crowd!</h1>
-        <h3>A User Friendly Guide to Doing Human Computation Well</h3>
+        <h1>2. Important Terms</h1>
+        <h3>Things you need to know about crowdsourcing</h3>
       </div>
     </div>
 
@@ -82,7 +82,16 @@ Platform:
           </div>
         </div>
 
+        <div class="col-lg-12">
 
+        <button type="button" class="btn btn-default" id="prev-button">
+            <span class="glyphicon glyphicon-chevron-left"></span> 1. Introduction
+        </button>
+
+        <button type="button" class="btn btn-default pull-right" id="next-button">
+            <span class="glyphicon glyphicon-chevron-right"></span> 3. Crowdsourcing Platforms
+        </button>
+        </div>
 
       </div>
 
@@ -98,7 +107,14 @@ Platform:
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
-
+        <script>
+        $("#next-button").click(function(){
+            location.href = "platforms.html";
+        });
+        $("#prev-button").click(function(){
+            location.href = "introduction.html";
+        });                
+        </script>
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
