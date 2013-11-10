@@ -33,9 +33,9 @@
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="introduction.html">1. Introduction</a></li>
-            <li class="active"><a href="terms.html">2. Important Terms</a></li>
+            <li><a href="terms.html">2. Important Terms</a></li>
             <li><a href="platforms.html">3. Crowdsourcing Platforms</a></li>
-            <li><a href="tasks.html">4. Tasks</a></li>
+            <li class="active"><a href="tasks.html">4. Tasks</a></li>
             <li><a href="results.html">5. Results</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
@@ -45,8 +45,8 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
-        <h1>2. Important Terms</h1>
-        <h3>Things you need to know about crowdsourcing</h3>
+        <h1>4. Tasks</h1>
+        <h3>Real-world examples of simple crowdsourcing tasks</h3>
       </div>
     </div>
 
@@ -55,43 +55,63 @@
       <div class="row">
         <div class="col-lg-12">
           <div>
-    Learning new vocabulary is everyone’s favorite thing, right? No, you’re right, it’s not our’s either. In any technical domain, it is essential to make sure that we have a common vocabulary. Not only will this be essential as you read through this tutorial, but it will help you when setting up your tasks online and reading other’s publications. Unless you are already familiar with crowdsourcing, we encourage you not to skip this section.
+    Want to start receiving information from the crowd as you read this tutorial? This section uses real-world examples to show you how to post tasks online. Because you’ll be following along, you’ll get your first results from the crowd before you finish the chapter. Our examples are admittedly basic, but you can use their replication code as templates for more advanced tasks. 
 
-<h4>Crowd:</h4>
-The most important, but most ambiguous, term in crowdsourcing is the crowd. The crowd generally refers to a group of workers who perform a task designed for a large group of people to do, in an open call.
+<h3>1. Hello, World!</h3>
 
-<h4>Crowdsourcing:</h4>
-The process of sending tasks to be performed by a crowd. Jeff Howe, who coined the term crowdsourcing in 2006, defines it as: “Crowdsourcing is the act of taking a job traditionally 
-performed by a designated agent (usually an employee) 
-and outsourcing it to an undefined, generally large 
-group of people in the form of an open call.”
+    The first task for every programmer when learning a new language is to make it print “Hello, World!” The task below is the equivalent for crowdsourcing. By posting this task online, you will be asking workers to type “Hello, World!” into a form. They may, however, ignore these instructions and type anything they’d like. At first, this probably doesn’t sound too exciting. But, after completing this task, you will be able to run your first crowdsourcing experiment.
+    <br/>
+    If you’d like to look at a complete, live version of this task while you’re following our instructions, you can look at our version here: http://bit.ly/HHlEVf. The completed Hello, World task should look like this:
+<br/>
+<img src="img/task-example.png">
+<br/>
 
 
-<h4>Crowdfunding:</h4>
-It is a way to raise money from a crowd of donors for projects. 
+<h3>2. Image Classification Task</h3>
 
-<h4>HIT:</h4>
-A task in Mechanical Turk, the most popular marketplace for crowdsourcing tasks, is called a HIT (Human Intelligent Task)
+[DESCRIBE IMAGE CLASSIFICATION TASK HERE]
+<br/> 
+<img src="img/task-fruits.png">
+<br/>
+Here’s a link to the task to play with:
+https://docs.google.com/a/fairtradework.com/forms/d/1umwtUOIJdJKpBsoISdVmaIDsvp-_Y1vXRd2ObBjfZvs/viewform
 
-<h4>Worker:</h4>
-A person performing the work, which is encapsulated in the format of a task
+<br/>
 
-<h4>Platform:</h4>
-It is a web site where the workers have access to task descriptions.
+Fruit labeling
+<br/>
+You will see 20 pictures of fruit. Please decide what kind of fruit it is.
+<br/>
+Go to the link below.  Please make an account there and log in.
+<br/>
+https://hellocrowd.herokuapp.com/turk/tasks/4398061354/
 
-<h4>Task Execution Platform: </h4>
- It is a site where the task is actually executed. In Mechanical Turk is called external HIT.   
+<br/>
+After logging in, you will see 20 pictures of fruit.  Please label each picture of fruit correctly.  Once you have finished, you will see a message.  Give the message as your answer below to complete the task.
+
+<h3> 3. Find a phone number of a business</h3>
+
+You will see 20 business names. Please look up the requested information about a business.
+<br/>
+<img src="img/task-business.png">
+<br/>
+Go to the link below.  Please make an account there and log in.
+<br/>
+https://hellocrowd.herokuapp.com/turk/tasks/4398361353
+
+<br/>
+After logging in, you will see 20 business names.  Please look up the missing piece of information about this business.  Once you have finished, you will see a message.  Give the message as your answer below to complete the task.
           </div>
         </div>
         <br/>
         <div class="col-lg-12">
 
         <button type="button" class="btn btn-default" id="prev-button">
-            <span class="glyphicon glyphicon-chevron-left"></span> 1. Introduction
+            <span class="glyphicon glyphicon-chevron-left"></span> 3. Crowdsourcing Platforms
         </button>
 
         <button type="button" class="btn btn-default pull-right" id="next-button">
-            <span class="glyphicon glyphicon-chevron-right"></span> 3. Crowdsourcing Platforms
+            <span class="glyphicon glyphicon-chevron-right"></span> 5. Analyzing Results
         </button>
         </div>
 
@@ -110,11 +130,11 @@ It is a web site where the workers have access to task descriptions.
 
         <script src="js/main.js"></script>
         <script>
-        $("#next-button").click(function(){
+        $("#prev-button").click(function(){
             location.href = "platforms.html";
         });
-        $("#prev-button").click(function(){
-            location.href = "introduction.html";
+        $("#next-button").click(function(){
+            location.href = "results.html";
         });                
         </script>
         <script>
